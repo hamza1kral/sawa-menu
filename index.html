@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAWA | Menu digital café, brunch et ftor</title>
+    <meta
+      name="description"
+      content="Découvrez le menu digital de SAWA : cafés, boissons chaudes, jus frais, brunchs, ftor et formules à la carte dans une consultation rapide sur mobile."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SAWA | Café & Moments d’Exception" />
+    <meta
+      property="og:description"
+      content="Le menu digital de SAWA, conçu pour afficher cafés, jus frais, brunchs et ftor sur mobile."
+    />
+    <meta property="og:site_name" content="SAWA" />
+    <meta property="og:locale" content="fr_FR" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0b'/%3E%3Cpath d='M18 42h10c7 0 12-4 12-10 0-5-4-8-10-8H18v4h11c3 0 6 1 6 4s-2 5-7 5H18v5Zm24-20h4l4 6 4-6h4l-6 9 6 9h-4l-4-6-4 6h-4l6-9-6-9Z' fill='%23d4af37'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="Retour à l'accueil SAWA">
+          <span class="brand-emblem" aria-hidden="true"></span>
+          <span class="brand-text">SAWA</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Ouvrir le menu de navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+          <a href="#incontournables">Incontournables</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">À propos</a>
+          <a href="#hours">Horaires</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">Temara, Maroc • Café, brunch &amp; ftor</p>
+            <h1>SAWA</h1>
+            <p class="hero-tagline">Café &amp; Moments d’Exception</p>
+            <p class="hero-description">
+              Un menu digital pensé pour afficher en quelques secondes les
+              cafés, boissons fraîches, jus maison, brunchs et formules ftor
+              proposés sur place.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#menu">Voir le menu</a>
+              <a class="button button-secondary" href="#contact"
+                >Nous contacter</a
+              >
+            </div>
+
+            <ul class="hero-highlights" aria-label="Les points forts de SAWA">
+              <li>Menu réel intégré à partir des cartes du café</li>
+              <li>Lecture rapide sur smartphone</li>
+              <li>Cafés, jus frais, brunchs et ftor en un seul écran</li>
+            </ul>
+          </div>
+
+          <aside class="hero-panel" data-reveal aria-label="Informations clés">
+            <div class="panel-heading">
+              <p class="panel-label">Sélection maison</p>
+              <h2>Signature SAWA</h2>
+            </div>
+
+            <div class="panel-spotlight">
+              <p class="spotlight-name">Brunch Sawa</p>
+              <p class="spotlight-text">
+                Boisson chaude, jus, pain perdu, omelette au peperoni et
+                fromage blanc du jour.
+              </p>
+              <p class="spotlight-price">55 MAD</p>
+            </div>
+
+            <div class="panel-divider" aria-hidden="true"></div>
+
+            <dl class="hero-facts">
+              <div>
+                <dt>Horaires</dt>
+                <dd>Tous les jours</dd>
+              </div>
+              <div>
+                <dt>Ouverture</dt>
+                <dd>07:30 - 11:30</dd>
+              </div>
+              <div>
+                <dt>Contact</dt>
+                <dd><a href="tel:+212663693515">0663-693515</a></dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section highlights-section" id="incontournables">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="section-kicker">Nos incontournables</p>
+            <h2>Les choix qui incarnent l’expérience SAWA</h2>
+            <p>
+              Une sélection de références appréciées pour leur équilibre,
+              leur fraîcheur et leur caractère.
+            </p>
+          </div>
+
+          <div class="featured-grid" id="featured-grid"></div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="section-kicker">Notre menu</p>
+            <h2>Une carte claire, rapide à parcourir, pensée pour le mobile</h2>
+            <p>
+              Filtrez les catégories ou recherchez instantanément un café, un
+              jus, un brunch ou une formule à la carte.
+            </p>
+          </div>
+
+          <div class="menu-controls" data-reveal>
+            <div class="search-field">
+              <label for="menu-search">Rechercher dans le menu</label>
+              <input
+                id="menu-search"
+                type="search"
+                placeholder="Ex. mocha, brunch, avocat, pain perdu..."
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="menu-status" aria-live="polite">
+              <span id="menu-count">0 article</span>
+              <span id="menu-state">Tous les produits</span>
+            </div>
+          </div>
+
+          <div
+            class="filter-chips"
+            id="filter-chips"
+            role="group"
+            aria-label="Filtres des catégories du menu"
+            data-reveal
+          ></div>
+
+          <div class="menu-grid" id="menu-grid"></div>
+          <p class="menu-empty hidden" id="menu-empty" aria-live="polite">
+            Aucun produit ne correspond à votre recherche pour le moment.
+          </p>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container about-grid">
+          <div class="about-copy" data-reveal>
+            <div class="section-heading section-heading-left">
+              <p class="section-kicker">À propos</p>
+              <h2>Une adresse pensée pour les moments calmes, intenses et choisis</h2>
+            </div>
+            <p>
+              SAWA cultive une hospitalité contemporaine où cafés, boissons
+              fraîches, jus maison et formules gourmandes accompagnent les
+              moments de pause, de brunch et de petit-déjeuner.
+            </p>
+            <p>
+              Notre carte a été conçue pour offrir des repères simples,
+              efficaces et désirables, avec une lecture claire pour les
+              clients qui découvrent le menu sur place.
+            </p>
+          </div>
+
+          <div class="about-cards" data-reveal>
+            <article class="info-card">
+              <span class="info-card-label">Positionnement</span>
+              <h3>Luxe discret</h3>
+              <p>
+                Des contrastes noirs et dorés, une présence visuelle sobre et
+                une expérience mobile sans friction.
+              </p>
+            </article>
+            <article class="info-card">
+              <span class="info-card-label">Promesse</span>
+              <h3>Rapide et mémorable</h3>
+              <p>
+                Un accès immédiat aux produits, aux prix et aux coordonnées,
+                sans surcharge visuelle.
+              </p>
+            </article>
+            <article class="info-card">
+              <span class="info-card-label">Signature</span>
+              <h3>Chaleur contemporaine</h3>
+              <p>
+                Une ambiance accueillante, raffinée et immédiatement crédible
+                pour une clientèle exigeante.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hours-section" id="hours">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="section-kicker">Horaires</p>
+            <h2>Des plages d’ouverture pensées pour le rythme de la journée</h2>
+            <p>
+              Ouvert tous les jours avec un horaire unique facile à consulter.
+            </p>
+          </div>
+
+          <div class="hours-card" data-reveal>
+            <div class="hours-row">
+              <span class="hours-day">Tous les jours</span>
+              <span class="hours-time">07:30 - 11:30</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="section-kicker">Contact</p>
+            <h2>Les informations essentielles, accessibles en un geste</h2>
+            <p>
+              Pour une visite sur place, une prise de contact rapide ou un accès
+              direct à la page Instagram du café.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card" data-reveal>
+              <span class="contact-label">Adresse</span>
+              <h3>SAWA</h3>
+              <p>Temara, Maroc</p>
+              <a href="https://maps.app.goo.gl/sUfZhW6tRT8daENh6?g_st=ic" target="_blank" rel="noreferrer"
+                >Ouvrir Google Maps</a
+              >
+            </article>
+
+            <article class="contact-card" data-reveal>
+              <span class="contact-label">Téléphone</span>
+              <h3>Appelez-nous</h3>
+              <p>0663-693515</p>
+              <a href="tel:+212663693515">Appeler maintenant</a>
+            </article>
+
+            <article class="contact-card" data-reveal>
+              <span class="contact-label">Instagram</span>
+              <h3>@sawacaf</h3>
+              <p>Suivez les nouveautés du café</p>
+              <a
+                href="https://www.instagram.com/sawacaf?igsh=MW9taXJraWJiajVtNA=="
+                target="_blank"
+                rel="noreferrer"
+                >Ouvrir Instagram</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#hero">SAWA</a>
+          <p class="footer-text">Café &amp; Moments d’Exception</p>
+        </div>
+
+        <div>
+          <h3>Coordonnées</h3>
+          <ul class="footer-list">
+            <li>Temara, Maroc</li>
+            <li><a href="tel:+212663693515">0663-693515</a></li>
+            <li>
+              <a href="https://www.instagram.com/sawacaf?igsh=MW9taXJraWJiajVtNA==" target="_blank" rel="noreferrer"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Accès rapide</h3>
+          <ul class="footer-list">
+            <li><a href="#menu">Voir le menu</a></li>
+            <li><a href="#hours">Horaires</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 SAWA. Tous droits réservés.</p>
+        <p>Café, brunch et ftor à Temara.</p>
+      </div>
+    </footer>
+
+    <a
+      class="floating-social"
+      href="https://www.instagram.com/sawacaf?igsh=MW9taXJraWJiajVtNA=="
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Voir Instagram de SAWA"
+    >
+      <span aria-hidden="true">IG</span>
+    </a>
+
+    <button
+      class="back-to-top"
+      id="back-to-top"
+      type="button"
+      aria-label="Retour en haut de la page"
+    >
+      ↑
+    </button>
+  </body>
+</html>
