@@ -606,6 +606,16 @@ button {
     rgba(8, 8, 8, 0.26);
 }
 
+.menu-note {
+  margin: 0 0 22px;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  color: var(--text-muted);
+  background: rgba(212, 175, 55, 0.05);
+  text-align: center;
+}
+
 .menu-controls {
   display: grid;
   gap: 16px;
